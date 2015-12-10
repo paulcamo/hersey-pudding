@@ -1,0 +1,193 @@
+// ---------------------------------------- //
+// --------------- MAIN CONTENT ------------ //
+// ---------------------------------------- //
+.puddings__list
+    max-width $size-desktop
+    width 100%
+    height auto
+    display flex
+    overflow hidden
+    flex-wrap wrap
+    +for_breakpoint(mobile)
+        margin-bottom 25px
+
+.generic__image
+    position absolute
+    +for_breakpoint(tablet)
+        position relative
+    +for_breakpoint(mobile)
+        position relative
+// --------------- SECTIONS OF PUDDINGS ------------ //    
+.puddings__item
+    overflow hidden
+    background-color $Temptress
+    height 662px
+    position relative
+    width 100%
+    display block
+    +for_breakpoint(tablet)
+        height auto
+    +for_breakpoint(mobile)
+        height auto
+
+.info__puddings__item
+    width 50%
+    overflow hidden
+    position relative
+    height 100%
+    +for_breakpoint(mobile)
+        width 100%
+        height auto
+        text-align center
+
+.puddings__cta__header
+    text-align center
+    display block
+    width 80%
+    margin-left auto
+    margin-right auto
+
+.puddings__cta__title
+    font-size 48px
+    color $white
+    margin-bottom 32px
+    +for_breakpoint(tablet)
+        font-size 30px
+        margin-bottom 10px
+    +for_breakpoint(mobile)
+        font-size 35px
+        margin-bottom 10px
+
+.puddings__cta__text
+    font-size 23px
+    margin-bottom 50px
+    +for_breakpoint(tablet)
+        font-size 18px
+        margin-bottom 30px
+    +for_breakpoint(mobile)
+        font-size 16px
+        margin-bottom 25px
+        width 80%
+        margin-left auto
+        margin-right auto
+
+.puddings__cta__nav
+    width 100%
+
+.puddings__cta__items a
+    background-color $Buccaneer
+    max-width 236px
+    width 100%
+    margin-bottom 19px
+    font-size 20px
+    padding 11px 24px
+    +for_breakpoint(tablet)
+        font-size 15px
+
+.puddings__img__container
+    width 100%
+    display block
+    position relative    
+
+// --------------- IMAGE ON PUDDING SECTIONS ------------ //   
+.pudding__small__text
+    display inline-block
+    position absolute
+    font-size 12px
+    width 100%
+    text-align center
+    +for_breakpoint(tablet)
+        position relative
+        width 100%
+        text-align center
+    +for_breakpoint(mobile)
+        display block
+        position relative
+
+.info__chocolate
+    .pudding__small__text
+        bottom 6%
+        +for_breakpoint(tablet)
+            bottom 12px
+        +for_breakpoint(mobile)
+            bottom 0
+
+.info__smore
+    .pudding__small__text
+        bottom 0
+        +for_breakpoint(tablet)
+            bottom 0
+        +for_breakpoint(mobile)
+            bottom 0
+
+.info__chocoberry
+    .pudding__small__text
+        bottom 3% 
+        +for_breakpoint(tablet)
+            bottom 0
+        +for_breakpoint(mobile)
+            bottom 0
+
+// --------------- CONTENT ON PUDDING SECTIONS ------------ // 
+.info__chocolate
+//    background url('../img/hersey-section-first.jpg') no-repeat top center
+    +for_breakpoint(tablet)
+        background-size 100% auto
+    .puddings__cta__header
+        margin-top 31%
+        +for_breakpoint(mobile)
+            margin-top 10%
+            width 100%
+
+.info__smore
+    background url('../img/hersey-section-second.jpg') no-repeat top center
+    +for_breakpoint(tablet)
+        background-size 100% auto
+    .puddings__cta__header
+        margin-top 33%
+        +for_breakpoint(mobile)
+            margin-top 10%
+            width 100%
+
+.info__chocoberry
+    background url('../img/hersey-section-first.jpg') no-repeat top center
+    +for_breakpoint(tablet)
+        background-size 100% auto
+    .puddings__cta__header
+        margin-top 32%
+        +for_breakpoint(mobile)
+            margin-top 10%
+            width 100%
+
+.first__pudding
+    max-width 629px
+    right 0
+    top 14%
+    +for_breakpoint(mobile)
+        max-width 300px
+        left 0
+        top 0
+
+.second__pudding
+    max-width 571px
+    left 0
+    top 0
+    +for_breakpoint(tablet)
+        top 0
+        left 0
+    +for_breakpoint(mobile)
+        max-width 300px
+        left 0
+        top 0
+
+.third__pudding
+    max-width 534px
+    width 100%
+    right 0
+    top 25%
+    +for_breakpoint(tablet)
+        top 12%
+    +for_breakpoint(mobile)
+        max-width 300px
+        left 0
+        top 0

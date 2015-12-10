@@ -1,0 +1,26 @@
+//- -------------- Home Page ---------------- -//
+//- ----------------------------------------- -//
+
+extends ../layout/layout
+include ../mixins/utilities
+include ../mixins/puddings-list
+include ../mixins/locations-map
+
+append head
+    link(href='css/index.css', rel='stylesheet', type='text/css')
+    link(href='css/thirdparty/perfect-scrollbar.css', rel='stylesheet', type='text/css')
+        
+append head-scripts
+    script(src="http://maps.googleapis.com/maps/api/js?libraries=geometry")
+
+
+block content
+
+    +puddingsList()
+
+    +locationsMap()
+
+
+append footer-scripts
+    script(src="js/thirdparty/perfect-scrollbar.jquery.js")
+    script $('.locations__list').perfectScrollbar();

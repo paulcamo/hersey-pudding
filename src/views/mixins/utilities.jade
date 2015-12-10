@@ -1,0 +1,12 @@
+//- -------------- Images ---------------- -//
+//- --------------------------------------- -//
+
+mixin insertImageTag(src, alt, cls)
+    img.generic__image(src=src, alt=alt, class=cls )
+    
+//- -------------- Buttons ---------------- -//
+//- --------------------------------------- -//
+
+mixin insertSampleButton(newclass, text, url, newTab)
+    a(class=newclass, href=url || '#', target=newTab || '_self')&attributes(attributes)
+        span.generic__button__text #{text}

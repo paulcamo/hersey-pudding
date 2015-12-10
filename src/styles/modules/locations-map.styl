@@ -1,0 +1,213 @@
+// ------------------------------------------ //
+// --------------- LOCATION MAPS ------------ //
+// ------------------------------------------ //
+.puddings__list
+    overflow hidden
+    
+.locations__wide__container
+    clear both
+    background-color $Peach
+    padding 120px 20px
+    
+    //- ------------------ MOBILE ONLY --------------- -//
+    +for_breakpoint(mobile)
+        padding 60px 10px
+    
+.locations__main__title,
+.locations__main__text
+    text-align center
+    font-size 28.15px
+    font-family $secundary-font
+    color $Temptress
+    
+    //- ------------------ MOBILE ONLY --------------- -//
+    +for_breakpoint(mobile)
+        font-size 20px
+    
+.locations__main__text
+    padding 34px 0 40px
+    
+.locations__main__title
+    font-family $primary-font
+    font-size 43px
+    line-height 51px
+    
+    //- ------------------ MOBILE ONLY --------------- -//
+    +for_breakpoint(mobile)
+        font-size 33px
+        line-height 38px
+
+.locations__search__container
+    width 297px
+    box-sizing border-box
+    margin 0 auto
+    padding 0 53px 68px 0
+    position relative
+    
+    //- ------------------ MOBILE ONLY --------------- -//
+    +for_breakpoint(mobile)
+        padding-bottom 35px
+    
+.locations__search__input
+    width 100%
+    line-height 60px
+    height 57px
+    font-size 17px
+    font-family $gotham-text
+    color $dove-gray
+    text-indent 37px
+    border-radius 10px 0 0 10px
+    
+.locations__search__button
+    display block
+    position absolute
+    top 0
+    right 0
+    height 57px
+    text-align center
+    width 53px
+    border-radius 0 10px 10px 0
+    color $white
+    background url(../img/map/check.jpg) no-repeat center $Temptress
+    cursor pointer
+    text-indent -9999999px
+    
+.locations__search__input,
+.locations__search__button
+    outline none
+    border none
+
+.locations__container
+    overflow hidden
+    max-width 1125px
+    margin 0 auto
+    
+.locations__list__container
+    width 570px
+    box-sizing border-box
+    padding 22px 30px 27px 33px
+    background-color $whiter
+    float left
+    border-radius 10px
+    overflow hidden
+    
+    //- ------------------- MOBILE, TABLET && DESKTOP ----------------- //
+    +new_breakpoint(null, 1085px)
+        float none
+        margin 0 auto
+        width auto
+        max-width 680px
+        
+    //- ------------------ MOBILE ONLY --------------- -//
+    +for_breakpoint(mobile)
+        padding 22px 10px 27px 10px
+    
+.locations__list
+    height 349px
+    padding-right 25px
+    padding-top 9px
+    position relative
+    
+    &.scrolling-off
+        .ps-scrollbar-y-rail
+            opacity 0
+            
+    //- ------------------ MOBILE ONLY --------------- -//
+    +for_breakpoint(mobile)
+        height 249px
+
+.locations__title
+    text-align center
+    color $Temptress
+    font-size 34px
+    padding-bottom 9px
+
+.locations__item
+    display block
+    font-size 26.31px
+    position relative
+    padding 21px 0 21px 60px
+    cursor pointer
+    
+    //- ------------------ MOBILE ONLY --------------- -//
+    +for_breakpoint(mobile)
+        padding 0 0 21px 10%
+
+.locations__icon
+    display block
+    width 60px 
+    height 40px
+    line-height 40px
+    font-size 48.24px
+    text-align center
+    position absolute
+    top 50%
+    left 0
+    margin-top -26px
+    font-family $secundary-font
+    color $Temptress
+    font-style normal
+    
+    //- ------------------ MOBILE ONLY --------------- -//
+    +for_breakpoint(mobile)
+        width 10%
+        font-size 25px
+        margin-top -33px
+    
+.locations__list__title
+    font-family $secundary-font
+    line-height 22px
+    color $Temptress
+    font-size 26.31px
+
+.locations__address__one,
+.locations__address__two,
+.locations__item__no__data
+    display block
+    color $dove-gray
+    font-family $gotham-text
+    line-height 20px
+        
+.locations__address__one
+    padding 7px 0 8px 25px
+
+.locations__list__title,
+.locations__address__one,
+.locations__address__two
+    padding-left 25px
+    border-left 2px solid $dove-gray
+    font-size 26.31px
+    
+    //- ------------------ MOBILE ONLY --------------- -//
+    +for_breakpoint(mobile)
+        padding-left 15px
+        font-size 17px
+        padding 0 0 0 15px
+        
+.locations__item__no__data
+    line-height 40px
+    text-align center
+    padding 0
+    
+.locations__map
+    width 436px
+    height 436px
+    float right
+    border solid 10px $Temptress
+    border-radius 5px
+    
+    //- ------------------- MOBILE, TABLET && DESKTOP ----------------- //
+    +new_breakpoint(null, 1085px)
+        float none
+        margin 40px auto 0
+        width auto
+        max-width 660px
+    
+
+    //- ------------------ MOBILE ONLY --------------- -//
+    +for_breakpoint(mobile)
+        height 300px
+
+
+
+

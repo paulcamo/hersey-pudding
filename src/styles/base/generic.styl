@@ -1,0 +1,55 @@
+// ---------------------------------------- //
+// ------------ GENERIC CONTENTS ---------- //
+// ---------------------------------------- //
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6
+    font-size 35px
+    font-family $font-normal
+    color black
+    font-family 'GothamRounded-Bold'
+
+h1 
+    font-family 'GothamRounded-Bold'
+    color white
+    font-weight bolder
+    
+.container
+    max-width $size-desktop
+    margin 0 auto 
+    width 100%
+    
+p
+    font-family $secundary-font
+    font-weight bold
+    color white
+    
+.generic__button
+    border-radius 12px
+    padding 9px 24px
+    text-align center
+    margin 0 auto
+    display block
+    max-width 151px
+    
+.generic__button__text
+    font-family 'GothamRounded-Bold'
+    color white
+    text-transform capitalize
+    
+.flt__left
+    float left
+    +for_breakpoint(mobile)
+        float none
+    
+.flt__right
+    float right
+    +for_breakpoint(mobile)
+        float none
+    
+.block
+    display block

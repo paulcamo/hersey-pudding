@@ -1,0 +1,35 @@
+include ../mixins/utilities
+
+//- -------------- Header ---------------- -//
+//- -------------------------------------- -//
+
+header.main__header.container
+    h1.main__header__title Introducing the biggest thing to hit the pudding aisle. Since pudding.
+    p.main__header__text  Made with milk and real HERSHEY’S cocoa.*
+    
+    +insertSampleButton("generic__button header__button scroll__to", "store locator", "#store-locator", newTab)(data-offset='-50', data-speed="1000")
+    
+    .main__header__content__info
+        ul.main__header__images 
+            li.main__header__images__item.first__image
+                a.scroll__to(href='#hersey-chocolate', data-offset='60')
+                    +insertImageTag('img/hersey-chocolate.png', 'hersey chocolate pudding')
+            li.main__header__images__item.second__image
+                a.scroll__to(href='#hersey-smore', data-offset='60')
+                    +insertImageTag('img/hersey-smore.png', 'hersey smore pudding')
+            li.main__header__images__item.third__image
+                a.scroll__to(href='#hersey-strawberry', data-offset='60')
+                    +insertImageTag('img/hersey-straw.png', 'hersey strawberry pudding')
+
+        .main__header__social   
+            ul.main__header__social__icons
+                li.main__header__social__item.main__header__social__facebook
+                    a.facebook__share(href="#", target="_blank")
+                        +insertImageTag('img/facebook.svg', 'facebook sharing')
+                        span share
+                li.main__header__social__item.main__header__social__twitter
+                    a.twitter__share(href="#", target="_blank")
+                        +insertImageTag('img/twitter.svg', 'twitter sharing')
+                        span share
+
+            p.social__text *Processed with Alkali

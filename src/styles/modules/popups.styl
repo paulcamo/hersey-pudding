@@ -1,0 +1,247 @@
+// --------------------------------------------- //
+// ------------------- POPUPS ------------------ //
+// --------------------------------------------- //
+$max-width = 600px
+$max-height = 600px
+$max-height-mobile = 200px
+
+
+html,
+body 
+    width 100%
+    height 100%
+    
+    & .blockScroll
+        overflow hidden
+
+.popup__shader
+    position fixed
+    top 0
+    left 0
+    width 100%
+    height 100%
+    z-index 2
+    
+
+.popup__window
+    max-width $max-width
+    max-height $max-height
+    min-width 200px
+    min-height 100px
+    background rgba(245, 238, 239, 0.9)
+    position fixed
+    top 50%
+    left 50%
+    z-index 4
+    padding 46px 46px 20px
+    box-shadow 0 0 10px rgba(0,0,0,.7)
+    border-radius 10px
+    text-align center
+    +for_breakpoint(mobile)
+        padding 20px 20px 10px
+        max-height $max-height-mobile
+        overflow-y hidden
+    
+//    p, h2, h3, h4, h5, li
+//        color $Temptress
+    
+.popup__window,
+.popup__shader
+    display none
+    
+.popup__close__button__color
+    background-color $Temptress
+    clear both
+    
+// ------------------- POPUPS SPECIFICS ------------------ //
+
+#nutrition-chocoberry, 
+#nutrition-smore, 
+#nutrition-chocolate
+    max-width 811px
+
+.popup__size
+    width 70%
+    box-sizing content-box
+    +for_breakpoint(mobile)
+        width 90%
+    
+.popup__title
+    font-size 22px
+    margin-bottom 15px
+
+.popup__subtitle
+    font-size 19px
+    font-family $secundary-font
+    color $cinnamon
+    margin-bottom 31px
+
+.popup__info__section 
+    margin-bottom 23px
+    width 100%
+    overflow hidden
+
+.info__section__table__subinfo
+    border-bottom 1px solid $Temptress
+
+.info__section__table__subinfo__text 
+    color $Temptress 
+    height 29px
+    text-align left
+    padding-left 17px
+    font-family $gotham-text
+    +for_breakpoint(mobile)
+        font-size 12px
+
+.info__section__table__subinfo__text__center
+    text-align center
+
+.info__section__table__subinfo__end
+    border-top 2px solid $Temptress
+
+.info__section__table__subinfo,
+.info__section__table__subinfo__end
+    font-family $gotham-text
+    
+.info__section__table__subinfo__text__center__bottom
+    color $Temptress 
+    height 29px
+    text-align center
+    font-family $gotham-text
+    position relative
+    width 26%
+    +for_breakpoint(mobile)
+        width 80px
+        font-size 11px
+    &:before
+        content "•"
+        width 5px
+        height 5px
+        position absolute
+        left 95%
+        font-family $primary-font 
+
+.info__section__table__subinfo__text__center__bottomno
+    color $Temptress 
+    height 29px
+    text-align center
+    font-family $gotham-text
+    position relative
+    width 26%
+    +for_breakpoint(mobile)
+        width 80px
+        font-size 11px
+    
+.popup__ingredients
+    font-family $gotham-text
+    color $Temptress
+    font-size 15px
+    margin-bottom 20px
+
+.popup__ingredients__bold
+    font-family $primary-font 
+    
+.popup__info__section__serving
+    width 30%
+    float left
+    +for_breakpoint(mobile)
+        width 100%
+
+.popup__info__section__table
+    width 70%
+    float left
+    +for_breakpoint(mobile)
+        width 100%
+        margin-top 23px
+    
+.info__section__serving
+    padding-right 20px
+    text-align left
+
+.popup__serving__info
+    font-family $gotham-text
+    font-size 14px
+    color $Temptress 
+
+.popup__serving__bold
+    font-family $secundary-font
+
+.info__section__serving__percent
+    color $Temptress 
+    font-size 15px
+    font-family $gotham-text
+    text-align left
+    font-weight normal
+    margin-top 23px
+    
+.info__section__table
+    width 100%
+
+.info__section__table__header
+    border-bottom 2px solid $Temptress 
+    color $Temptress 
+    font-family $primary-font
+    th 
+        text-align center
+        +for_breakpoint(mobile)
+            font-size 11px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,187 @@
+// ---------------------------------------- //
+// --------------- MAIN HEADER ------------ //
+// ---------------------------------------- //
+.main__header
+    margin-top 135px
+    +for_breakpoint(tablet)
+        margin-top 60px
+    +for_breakpoint(mobile)
+        margin-top 35px
+
+.main__header__title
+    max-width 714px
+    text-align center
+    margin 0 auto
+    font-size 39px
+    +for_breakpoint(tablet)
+        font-size 34px
+    +for_breakpoint(mobile)
+        font-size 22px
+        max-width 300px
+
+.main__header__text
+    color $white
+    text-align center
+    font-size 22px
+    margin-top 31px
+    margin-bottom 47px
+    +for_breakpoint(tablet)
+        font-size 17px
+    +for_breakpoint(mobile)
+        font-size 12px
+        margin-bottom 30px
+        margin-top 15px
+
+.header__button
+    background-color $dove-gray
+    color $white
+    font-size 21px
+    +for_breakpoint(tablet)
+        font-size 16px
+        
+// --------------- MAIN HEADER IMAGES ------------ //
+
+.main__header__content__info
+    height auto
+    position relative
+
+.main__header__images
+    height 515px
+    width 100%
+    margin-left auto
+    margin-right auto
+    position relative
+    overflow hidden
+    background url("../img/bg-header-images.png") no-repeat top center
+    background-size 74%
+    +for_breakpoint(tablet)
+        height 339px
+    +for_breakpoint(mobile)
+        height auto
+        display block
+        text-align center
+        background-image none
+        margin-top 35px
+
+.main__header__images__item
+    display inline-block
+    position absolute
+    overflow hidden
+    background url("../img/glow-puddings.png") no-repeat top center
+    background-size 100%
+    height 100%
+    +for_breakpoint(mobile)
+        display block
+        position relative
+        height auto
+        background-size 40%
+
+.first__image
+    top 12%
+    left 11%
+    width 23%
+    +for_breakpoint(mobile)
+        top 0
+        left 0
+        width 100%
+
+.second__image
+    top 24%
+    left 38%
+    width 24%
+    +for_breakpoint(mobile)
+        top 0
+        left 0
+        width 100%
+
+.third__image
+    top 12%
+    right 10%
+    width 24%
+    +for_breakpoint(mobile)
+        top 0
+        left 0
+        width 100%
+
+.generic__image
+    width 100%
+    +for_breakpoint(mobile)
+        max-width 200px
+    
+.main__header__social
+    position absolute
+    z-index 1
+    right 10%
+    bottom 0
+    +for_breakpoint(tablet)
+        bottom 26%
+    +for_breakpoint(mobile)
+        position relative
+        right 0
+        bottom 0
+        max-width 150px
+        margin auto
+
+.main__header__social__facebook
+    margin-right 22px
+    height 46px
+    +for_breakpoint(mobile)
+        margin-right 17px
+
+.main__header__social__twitter
+    padding-top 5px 
+    height 41px
+
+.main__header__social__icons
+    position relative
+    overflow hidden
+    width 88px
+    margin auto
+    span 
+        font-family $gotham-text
+        font-size 10px
+        clear both
+        position absolute
+        bottom 0
+        display block
+        color $white
+    +for_breakpoint(mobile)
+        width 79px
+        
+.main__header__social__item
+    width 31px
+    float left
+    position relative
+    img 
+        max-width 27px
+.twitter__share
+    width 100%
+    clear both
+    position relative
+    top 0
+    height 100%
+    display block
+    +for_breakpoint(tablet)
+        position relative
+    +for_breakpoint(mobile)
+        position relative
+
+.facebook__share
+    width 100%
+    clear both
+    position relative
+    top 0
+    height 100%
+    display block
+    +for_breakpoint(tablet)
+        position relative
+    +for_breakpoint(mobile)
+        position relative
+
+.social__text
+    font-size 13px
+    margin-top 16px
+    +for_breakpoint(mobile)
+        font-size 11px
+        margin-top 10px
+        text-align center

@@ -1,0 +1,18 @@
+//- -------------- PUDDING LIST ---------------- -//
+//- ------------------------------------------- -//
+
+mixin locationsMap()
+    div.locations__wide__container(id='store-locator')
+        h2.locations__main__title HERSHEY’S Pudding Locator
+        p.locations__main__text Enter your ZIP code to find out where you can #[span.block make all your pudding dreams come true.]
+        
+        div.locations__search__container
+            input.locations__search__input(type='text')
+            button.locations__search__button search
+
+        section.locations__container
+            article.locations__list__container
+                h2.locations__title Results
+                ul.locations__list
+                
+            div.locations__map#googleMap

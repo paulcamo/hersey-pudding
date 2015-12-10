@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Rock Cafe",
+        "address": {
+            "line1": "2627 N Elston Ave",
+            "line2": "Chicago, IL 60657"
+        },
+        "zipcode": "60657",
+        "position": {"lat": 41.941422, "lng": -87.656360}
+    },
+    {
+        "name": "Strack and Van Market",
+        "address": {
+            "line1": "2627 N Elston Ave",
+            "line2": "Chicago, IL 90210"
+        },
+        "zipcode": "90210",
+        "position": {"lat": 34.1003517, "lng": -118.4495649}
+    },
+    {
+        "name": "New Test",
+        "address": {
+            "line1": "321 N Halsted Ave",
+            "line2": "Chicago, IL 90210"
+        },
+        "zipcode": "90210",
+        "position": {"lat": 34.315979, "lng": -118.081064}
+    },
+    {
+        "name": "Jewel-Osco",
+        "address": {
+            "line1": "567 N Broadway Ave",
+            "line2": "Chicago, IL 90210"
+        },
+        "zipcode": "90210",
+        "position": {"lat": 34.099143, "lng": -118.419353}
+    },
+    {
+        "name": "Mariano’s",
+        "address": {
+            "line1": "321 N Halsted Ave",
+            "line2": "Chicago, IL 90210"
+        },
+        "zipcode": "90210",
+        "position": {"lat": 34.121458, "lng": -118.495914}
+    },
+    {
+        "name": "Rock Cafe 2",
+        "address": {
+            "line1": "2627 N Elston Ave",
+            "line2": "Chicago, IL 60657"
+        },
+        "zipcode": "60657",
+        "position": {"lat": 41.936059, "lng": -87.670780}
+    }
+]

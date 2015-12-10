@@ -1,0 +1,13 @@
+// ---------------------------------------- //
+// -------------- MAIN LAYOUT ------------- //
+// ---------------------------------------- //
+@import '../modules/main-footer'
+@import '../modules/main-header'
+
+body
+    background $bg-color url("../img/ribbon.png") no-repeat top right
+    background-size 177px
+    +for_breakpoint(tablet)
+        background-size 15%
+    +for_breakpoint(mobile)
+        background-size 20%

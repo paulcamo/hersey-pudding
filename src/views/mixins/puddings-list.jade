@@ -1,0 +1,237 @@
+//- -------------- PUDDING LIST ---------------- -//
+//- ------------------------------------------- -//
+
+mixin puddingsList()
+    ul.puddings__list
+        li.puddings__item.info__chocolate
+            span.info__puddings__item.flt__right
+                header.puddings__cta__header
+                    h2.puddings__cta__title#hersey-chocolate Chocolate
+                    p.puddings__cta__text The classic HERSHEY’S taste you love. Now in a cup.
+
+                    ul.puddings__cta__nav
+                        li.puddings__cta__items
+                            +insertSampleButton("generic__button info__button popup__link", "Nutritional Information", "#nutrition-chocolate", newTab)
+                        li.puddings__cta__items
+                            +insertSampleButton("generic__button info__button popup__link", "Ingredients", "#ingredient-chocolate", newTab)
+            span.info__puddings__item.flt__right
+                +insertImageTag('img/hersey-chocolate-info.png', 'hersey chocolate pudding', 'first__pudding')
+                p.pudding__small__text Chocolate Flavor
+        
+        li.puddings__item.info__smore
+            span.info__puddings__item.flt__left
+                header.puddings__cta__header
+                    h2.puddings__cta__title#hersey-smore S’mores
+                    p.puddings__cta__text Now stting up camp in the pudding aisle.
+
+                    ul.puddings__cta__nav
+                        li.puddings__cta__items
+                            +insertSampleButton("generic__button info__button popup__link", "Nutritional Information", "#nutrition-smore", newTab)
+                        li.puddings__cta__items
+                            +insertSampleButton("generic__button info__button popup__link", "Ingredients", "#ingredient-smore", newTab)
+            span.info__puddings__item.flt__left
+                +insertImageTag('img/hersey-smores-info.png', 'hersey smore pudding', 'second__pudding')
+                p.pudding__small__text Artificially Flowered
+        
+        li.puddings__item.info__chocoberry
+            span.info__puddings__item.flt__right
+                header.puddings__cta__header
+                    h2.puddings__cta__title#hersey-strawberry Chocolate Covered Stawberry
+                    p.puddings__cta__text Taking strawberries for a dip in the pudding aisle.
+
+                    ul.puddings__cta__nav
+                        li.puddings__cta__items
+                            +insertSampleButton("generic__button info__button popup__link", "Nutritional Information", "#nutrition-chocoberry", newTab)
+                        li.puddings__cta__items
+                            +insertSampleButton("generic__button info__button popup__link", "Ingredients", "#ingredient-chocoberry", newTab)
+            span.info__puddings__item.flt__right
+                +insertImageTag('img/hersey-strawberry-info.png', 'hersey strawberry pudding', 'third__pudding')
+                p.pudding__small__text Artificially Flowered
+
+
+    //- ---------------- POPUP WINDOWS --------------- -//
+    
+    //- ---------------- POPUP WINDOWS CHOCOLATE --------------- -//
+    div.popup__window.popup__size#ingredient-chocolate
+        h2.popup__title Ingredients
+        p.popup__subtitle HERSHEY’S Chocolate Pudding Cups
+        p.popup__ingredients #[span.popup__ingredients__bold FILLING]: SKIM MILK, WATER, SUGAR, CREAM, MODIFIED FOOD STARCH, COCOA PROCESSED WITH ALKALI, CONTAINS LESS THAN 2% OF GELATIN, SALT, SODIUM STEAROYL LACTYLATE (FOR SMOOTH TEXTURE), NATURAL AND ARTIFICIAL FLAVOR, VITAMIN A PALMITATE, VITAMIN D3.
+        p.popup__ingredients #[span.popup__ingredients__bold TOPPING]: WATER, SKIM MILK, SUGAR, CREAM, MODIFIED FOOD STARCH, CONTAINS LESS THAN 2% OF GELATIN, ARTIFICIAL COLOR, MILK PROTEIN CONCENTRATE, SALT, SODIUM STEAROYL LACTYLATE, NATURAL AND ARTIFICIAL FLAVOR, VITAMIN A PALMITATE, VITAMIN D3.
+        p.popup__ingredients #[span.popup__ingredients__bold CONTAINS]: MILK.
+        a.popup__close.generic__button.popup__close__button__color(href="#")
+            span.generic__button__text Okay, got it!
+
+    div.popup__window.popup__size#nutrition-chocolate
+        h2.popup__title Nutritional Information
+        p.popup__subtitle HERSHEY’S Chocolate Pudding Cups
+        .popup__info__section  
+            span.popup__info__section__serving
+                ul.info__section__serving
+                    li.popup__serving__info #[span.popup__serving__bold Serving size] 1 snack (93g)
+                    li.popup__serving__info #[span.popup__serving__bold Serving] 4
+                    li.popup__serving__info #[span.popup__serving__bold Calories] 110
+                    li.popup__serving__info Fat Cal 25
+                p.info__section__serving__percent Percent Daily Values (DV) are based on a 2,000 calorie diet.
+            span.popup__info__section__table
+                table.info__section__table
+                    tr.info__section__table__header
+                        th Amount/Serving
+                        th %DV*
+                        th Amount/Serving
+                        th %DV*
+                    tr.info__section__table__subinfo
+                        td.info__section__table__subinfo__text #[span.popup__serving__bold Total Fat] 3g
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 5%] 
+                        td.info__section__table__subinfo__text #[span.popup__serving__bold Total Carb] 20g
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 7%]
+                    tr.info__section__table__subinfo
+                        td.info__section__table__subinfo__text Sad Fat 2g
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 10%] 
+                        td.info__section__table__subinfo__text Fiber <1g
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 2%] 
+                    tr.info__section__table__subinfo
+                        td.info__section__table__subinfo__text Trans Fat 0g
+                        td 
+                        td.info__section__table__subinfo__text Sugars 16g
+                        td 
+                    tr.info__section__table__subinfo
+                        td.info__section__table__subinfo__text #[span.popup__serving__bold Cholest] 10mg
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 3%] 
+                        td.info__section__table__subinfo__text #[span.popup__serving__bold Protein] 2g
+                        td 
+                    tr.info__section__table__subinfo__noborder
+                        td.info__section__table__subinfo__text #[span.popup__serving__bold Sodium] 160mg
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 7%]
+                        td 
+                        td 
+                    tr.info__section__table__subinfo__end
+                        td.info__section__table__subinfo__text__center__bottom Vitamin a 4%
+                        td.info__section__table__subinfo__text__center__bottom Vitamin C 0%
+                        td.info__section__table__subinfo__text__center__bottom Calcium 4% 
+                        td.info__section__table__subinfo__text__center__bottomno Iron 2%
+        a.popup__close.generic__button.popup__close__button__color(href="#") 
+            span.generic__button__text Okay, got it!
+            
+    //- ---------------- POPUP WINDOWS SMORE --------------- -//
+
+    div.popup__window.popup__size#ingredient-smore
+        h2.popup__title Ingredients
+        p.popup__subtitle HERSHEY’S Smore Pudding Cups
+        p.popup__ingredients #[span.popup__ingredients__bold FILLING]: SKIM MILK, WATER, SUGAR, CREAM, MODIFIED FOOD STARCH, COCOA PROCESSED WITH ALKALI, CONTAINS LESS THAN 2% OF GELATIN, SALT, SODIUM STEAROYL LACTYLATE (FOR SMOOTH TEXTURE), NATURAL AND ARTIFICIAL FLAVOR, VITAMIN A PALMITATE, VITAMIN D3.
+        p.popup__ingredients #[span.popup__ingredients__bold TOPPING]: WATER, SKIM MILK, SUGAR, CREAM, MODIFIED FOOD STARCH, CONTAINS LESS THAN 2% OF GELATIN, ARTIFICIAL COLOR, MILK PROTEIN CONCENTRATE, SALT, SODIUM STEAROYL LACTYLATE, NATURAL AND ARTIFICIAL FLAVOR, VITAMIN A PALMITATE, VITAMIN D3.
+        p.popup__ingredients #[span.popup__ingredients__bold CONTAINS]: MILK.
+        a.popup__close.generic__button.popup__close__button__color(href="#")
+            span.generic__button__text Okay, got it!
+
+    div.popup__window.popup__size#nutrition-smore
+        h2.popup__title Nutritional Information
+        p.popup__subtitle HERSHEY’S Chocolate Pudding Cups
+        .popup__info__section
+            span.popup__info__section__serving
+                ul.info__section__serving
+                    li.popup__serving__info #[span.popup__serving__bold Serving size] 1 snack (93g)
+                    li.popup__serving__info #[span.popup__serving__bold Serving] 4
+                    li.popup__serving__info #[span.popup__serving__bold Calories] 110
+                    li.popup__serving__info Fat Cal 25
+                p.info__section__serving__percent Percent Daily Values (DV) are based on a 2,000 calorie diet.
+            span.popup__info__section__table
+                table.info__section__table
+                    tr.info__section__table__header
+                        th Amount/Serving
+                        th %DV*
+                        th Amount/Serving
+                        th %DV*
+                    tr.info__section__table__subinfo
+                        td.info__section__table__subinfo__text #[span.popup__serving__bold Total Fat] 3g
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 5%] 
+                        td.info__section__table__subinfo__text #[span.popup__serving__bold Total Carb] 20g
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 7%]
+                    tr.info__section__table__subinfo
+                        td.info__section__table__subinfo__text Sad Fat 2g
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 10%] 
+                        td.info__section__table__subinfo__text Fiber <1g
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 2%] 
+                    tr.info__section__table__subinfo
+                        td.info__section__table__subinfo__text Trans Fat 0g
+                        td 
+                        td.info__section__table__subinfo__text Sugars 16g
+                        td 
+                    tr.info__section__table__subinfo
+                        td.info__section__table__subinfo__text #[span.popup__serving__bold Cholest] 10mg
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 3%] 
+                        td.info__section__table__subinfo__text #[span.popup__serving__bold Protein] 2g
+                        td 
+                    tr.info__section__table__subinfo__noborder
+                        td.info__section__table__subinfo__text #[span.popup__serving__bold Sodium] 160mg
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 7%]
+                        td 
+                        td 
+                    tr.info__section__table__subinfo__end
+                        td.info__section__table__subinfo__text__center__bottom Vitamin a 4%
+                        td.info__section__table__subinfo__text__center__bottom Vitamin C 0%
+                        td.info__section__table__subinfo__text__center__bottom Calcium 4% 
+                        td.info__section__table__subinfo__text__center__bottomno Iron 2%
+        a.popup__close.generic__button.popup__close__button__color(href="#") 
+            span.generic__button__text Okay, got it!
+
+    //- ---------------- POPUP WINDOWS CHOCOBERRY --------------- -//
+
+    div.popup__window.popup__size#ingredient-chocoberry
+        h2.popup__title Ingredients
+        p.popup__subtitle HERSHEY’S Chocolate Covered Stawberry Pudding Cups
+        p.popup__ingredients #[span.popup__ingredients__bold FILLING]: SKIM MILK, WATER, SUGAR, CREAM, MODIFIED FOOD STARCH, COCOA PROCESSED WITH ALKALI, CONTAINS LESS THAN 2% OF GELATIN, SALT, SODIUM STEAROYL LACTYLATE (FOR SMOOTH TEXTURE), NATURAL AND ARTIFICIAL FLAVOR, VITAMIN A PALMITATE, VITAMIN D3.
+        p.popup__ingredients #[span.popup__ingredients__bold TOPPING]: WATER, SKIM MILK, SUGAR, CREAM, MODIFIED FOOD STARCH, CONTAINS LESS THAN 2% OF GELATIN, ARTIFICIAL COLOR, MILK PROTEIN CONCENTRATE, SALT, SODIUM STEAROYL LACTYLATE, NATURAL AND ARTIFICIAL FLAVOR, VITAMIN A PALMITATE, VITAMIN D3.
+        p.popup__ingredients #[span.popup__ingredients__bold CONTAINS]: MILK.
+        a.popup__close.generic__button.popup__close__button__color(href="#")
+            span.generic__button__text Okay, got it!
+
+    div.popup__window.popup__size#nutrition-chocoberry
+        h2.popup__title Nutritional Information
+        p.popup__subtitle HERSHEY’S Chocolate Pudding Cups
+        .popup__info__section
+            span.popup__info__section__serving
+                ul.info__section__serving
+                    li.popup__serving__info #[span.popup__serving__bold Serving size] 1 snack (93g)
+                    li.popup__serving__info #[span.popup__serving__bold Serving] 4
+                    li.popup__serving__info #[span.popup__serving__bold Calories] 110
+                    li.popup__serving__info Fat Cal 25
+                p.info__section__serving__percent Percent Daily Values (DV) are based on a 2,000 calorie diet.
+            span.popup__info__section__table
+                table.info__section__table
+                    tr.info__section__table__header
+                        th Amount/Serving
+                        th %DV*
+                        th Amount/Serving
+                        th %DV*
+                    tr.info__section__table__subinfo
+                        td.info__section__table__subinfo__text #[span.popup__serving__bold Total Fat] 3g
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 5%] 
+                        td.info__section__table__subinfo__text #[span.popup__serving__bold Total Carb] 20g
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 7%]
+                    tr.info__section__table__subinfo
+                        td.info__section__table__subinfo__text Sad Fat 2g
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 10%] 
+                        td.info__section__table__subinfo__text Fiber <1g
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 2%] 
+                    tr.info__section__table__subinfo
+                        td.info__section__table__subinfo__text Trans Fat 0g
+                        td 
+                        td.info__section__table__subinfo__text Sugars 16g
+                        td 
+                    tr.info__section__table__subinfo
+                        td.info__section__table__subinfo__text #[span.popup__serving__bold Cholest] 10mg
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 3%] 
+                        td.info__section__table__subinfo__text #[span.popup__serving__bold Protein] 2g
+                        td 
+                    tr.info__section__table__subinfo__noborder
+                        td.info__section__table__subinfo__text #[span.popup__serving__bold Sodium] 160mg
+                        td.info__section__table__subinfo__text.info__section__table__subinfo__text__center #[span.popup__serving__bold 7%]
+                        td 
+                        td 
+                    tr.info__section__table__subinfo__end
+                        td.info__section__table__subinfo__text__center__bottom Vitamin a 4%
+                        td.info__section__table__subinfo__text__center__bottom Vitamin C 0%
+                        td.info__section__table__subinfo__text__center__bottom Calcium 4% 
+                        td.info__section__table__subinfo__text__center__bottomno Iron 2%
+        a.popup__close.generic__button.popup__close__button__color(href="#") 
+            span.generic__button__text Okay, got it!
